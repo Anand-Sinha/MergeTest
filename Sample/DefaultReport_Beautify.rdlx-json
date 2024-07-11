@@ -1,0 +1,41 @@
+{
+  "Name": "multisectionreport1",
+  "Width": "2pt",
+  "Layers": [{ "Name": "default" }],
+  "CustomProperties": [
+    { "Name": "DisplayType", "Value": "Page" },
+    { "Name": "SizeType", "Value": "Default" },
+    { "Name": "CollapseWhiteSpace", "Value": "True" }
+  ],
+  "Version": "7.6.0",
+  "Page": {
+    "PageWidth": "8.5in",
+    "PageHeight": "11in",
+    "RightMargin": "0in",
+    "LeftMargin": "0in",
+    "TopMargin": "0in",
+    "BottomMargin": "0in",
+    "Columns": 1,
+    "ColumnSpacing": "0.5in",
+    "PaperOrientation": "Portrait"
+  },
+  "ReportSections": [
+    {
+      "Type": "Continuous",
+      "Name": "ContinuousSection1",
+      "Page": {
+        "PageWidth": "8.5in",
+        "PageHeight": "11in",
+        "RightMargin": "1in",
+        "LeftMargin": "1in",
+        "TopMargin": "1in",
+        "BottomMargin": "1in",
+        "Columns": 1,
+        "ColumnSpacing": "0in",
+        "PaperOrientation": "Portrait"
+      },
+      "Width": "2pt",
+      "Body": { "Height": "2pt" }
+    }
+  ]
+}
