@@ -26,6 +26,13 @@
         "DataProvider": "JSON",
         "ConnectString": "endpoint=https://demodata.grapecity.com/northwind/api/v1/Customers"
       }
+    },
+    {
+      "Name": "DataSource1",
+      "ConnectionProperties": {
+        "DataProvider": "JSON",
+        "ConnectString": "endpoint=https://demodata.grapecity.com/northwind/api/v1/Categories"
+      }
     }
   ],
   "ReportSections": [
@@ -43,6 +50,9 @@
         "ColumnSpacing": "0in",
         "PaperOrientation": "Portrait"
       },
+      "Width": "1.7108in",
+      "Body": {
+        "Height": "1.5325in",
       "Width": "1in",
       "Body": {
         "Height": "0.25in",
@@ -58,6 +68,25 @@
               "PaddingTop": "2pt",
               "PaddingBottom": "2pt"
             },
+            "Left": "0.3057in",
+            "Top": "0.4029in",
+            "Width": "1in",
+            "Height": "0.25in"
+          },
+          {
+            "Type": "textbox",
+            "Name": "TextBox2",
+            "ZIndex": 1,
+            "CanGrow": true,
+            "KeepTogether": true,
+            "Style": {
+              "PaddingLeft": "2pt",
+              "PaddingRight": "2pt",
+              "PaddingTop": "2pt",
+              "PaddingBottom": "2pt"
+            },
+            "Left": "0.7108in",
+            "Top": "1.2825in",
             "Width": "1in",
             "Height": "0.25in"
           }
@@ -82,6 +111,22 @@
         { "Name": "fax", "DataField": "fax" }
       ],
       "Query": { "DataSourceName": "DataSource", "CommandText": "jpath=$.[*]" },
+      "CaseSensitivity": "Auto",
+      "KanatypeSensitivity": "Auto",
+      "AccentSensitivity": "Auto",
+      "WidthSensitivity": "Auto"
+    },
+    {
+      "Name": "DataSet1",
+      "Fields": [
+        { "Name": "categoryId", "DataField": "categoryId" },
+        { "Name": "categoryName", "DataField": "categoryName" },
+        { "Name": "description", "DataField": "description" }
+      ],
+      "Query": {
+        "DataSourceName": "DataSource1",
+        "CommandText": "jpath=$.[*]"
+      },
       "CaseSensitivity": "Auto",
       "KanatypeSensitivity": "Auto",
       "AccentSensitivity": "Auto",
