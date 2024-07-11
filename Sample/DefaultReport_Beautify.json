@@ -1,5 +1,5 @@
 {
-  "Name": "multisectionreport11",
+  "Name": "multisectionreport1",
   "Width": "0in",
   "Layers": [{ "Name": "default" }],
   "CustomProperties": [
@@ -53,6 +53,9 @@
       "Width": "1.7108in",
       "Body": {
         "Height": "1.5325in",
+      "Width": "1in",
+      "Body": {
+        "Height": "0.25in",
         "ReportItems": [
           {
             "Type": "textbox",
